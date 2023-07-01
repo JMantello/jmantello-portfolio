@@ -1,0 +1,135 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Root Variables */
+:root {
+    --background-color: rgba(0, 0, 0, 0.89);
+}
+
+/* HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    background-color: var(--background-color);
+}
+
+/* Header */
+header {
+    background-color: var(--background-color);
+    color: #fff;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    backdrop-filter: blur(40px);
+    background-color: var(--background-color);
+}
+
+nav ul {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav a {
+    color: #e6e6e6;
+    text-decoration: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+nav a:hover {
+    color: #fff;
+    transition: 1s;
+}
+
+#brand-title {
+    margin-right: auto;
+}
+
+#brand-title a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: large;
+}
+
+#brand-title a:hover {
+    /* Keep invisible bottom border */
+    border-bottom: none
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Main */
+main {}
+
+/* Sections */
+section {
+    width: min(90%, 1800px);
+    margin: auto;
+    padding: 15px;
+}
+
+#introduction {
+    margin-top: max(10%, 100px);
+    display: flex;
+    gap: min(50px, 10%);
+}
+
+#introduction img {
+    max-width: 320px;
+    height: auto;
+    border-radius: 25px;
+}
+
+#introduction p {
+    font-size: larger;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#links {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+}
+
+#links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    transition: 0.5s;
+}
+
+#about-me {
+    width: min(95%, 2000px);
+    background-color: beige;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 45px;
+    border-radius: 25px;
+}
